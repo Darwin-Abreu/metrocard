@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MetroCard Funds Check</title>
+    </head>
+    <body>
+        <h1>MetroCard Funds</h1>
+        <p id="result"></p>
+        <script>
+            //created a var called metrocard and gave it a value
+            let metrocard=5.00;
+            //made the mta_fare constant and gave it the assigned value
+            const mta_fare=2.74;
+            //checking if the metrocard var has enough funds for the mta_fare
+            if (metrocard>=mta_fare) {
+                //calling on the "result paragraph made earlier"
+                document.getElementById("result").innerText="You have enough funds.";
+            }
+            //if the metrocard valuse is lower than the mta_fare value this will happen
+            else {
+                document.getElementById("result").innerText="you do not have enough funds."
+            }
+
+        </script>
+    </body>
+
+</html>
